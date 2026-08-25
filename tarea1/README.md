@@ -6,7 +6,7 @@ Criterio Greedy: Si el cliente pago con $20. Al tener que devolver $15 de cambio
 
 Complejidad: Tiempo O(N) (donde N es el número de clientes, ya que se recorre la lista una sola vez) y Espacio O(1) (solo se usan dos variables enteras para contar, sin importar el tamaño de la entrada).
 
-![Accepted — Lemonade Change](evidencias\lemonade-change-accepted.png)
+![Accepted — Lemonade Change](evidencias/lemonade-change-accepted.png)
 
 ## 455. Assign Cookies
 
@@ -19,4 +19,4 @@ Tiempo: O(N log N + M log M), donde N es la cantidad de niños y M la cantidad d
 
 Espacio: O(1) auxiliar, ya que solo se utilizan un par de variables para los punteros, operando sobre los arreglos directamente.
 
-![Accepted — Assign Cookies](evidencias\assign-cookies-accepted.png)
+![Accepted — Assign Cookies](evidencias/assign-cookies-accepted.png)
