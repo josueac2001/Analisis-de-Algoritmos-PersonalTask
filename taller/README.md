@@ -27,3 +27,13 @@ Idea: El estado dp[i][j] almacena la longitud de la subsecuencia común más lar
 Complejidad: Tiempo $\Theta(n \cdot m)$ y Espacio $\Theta(n \cdot m)$, donde n y m son las longitudes de las cadenas text1 y text2 respectivamente, ya que se tabulan los resultados en una matriz de esas dimensiones.
 
 ![Accepted — Longest Common Subsequence](evidencias/longest-common-subsequence-accepted.png)
+
+## 435. Non-overlapping Intervals
+
+https://leetcode.com/problems/non-overlapping-intervals/
+
+Familia: greedy  
+Idea: Minimizar los borrados equivale a maximizar las actividades compatibles, por lo que se aplica el problema clásico de selección de actividades. El criterio greedy consiste en ordenar los intervalos por su hora de fin y mediante un barrido lineal, aceptar siempre el siguiente intervalo que no se solape con el último elegido. los que se solapan son descartados y contabilizados.  
+Complejidad: Tiempo $O(n \log n)$ porque el algoritmo está dominado por el ordenamiento inicial, seguido de un barrido lineal O(n). Espacio O(1) extra auxiliar.
+
+![Accepted — Non-overlapping Intervals](evidencias/non-overlapping-intervals-accepted.png)
