@@ -37,3 +37,13 @@ Idea: Minimizar los borrados equivale a maximizar las actividades compatibles, p
 Complejidad: Tiempo $O(n \log n)$ porque el algoritmo está dominado por el ordenamiento inicial, seguido de un barrido lineal O(n). Espacio O(1) extra auxiliar.
 
 ![Accepted — Non-overlapping Intervals](evidencias/non-overlapping-intervals-accepted.png)
+
+## 39. Combination Sum
+
+https://leetcode.com/problems/combination-sum/
+
+Familia: backtracking  
+Idea: Se explora el árbol de soluciones de forma exhaustiva. En cada paso se elige un candidato candidates[i], se añade a la combinación actual y se resta del target. Si el target llega a cero, se guarda la combinación; si se vuelve negativo, se poda la rama. Al regresar de la recursión, se deshace la elección eliminando el último número para probar con la siguiente alternativa.  
+Complejidad: Tiempo $O(n^{T/M})$, donde $n$ es el número de candidatos, $T$ es el target y $M$ es el elemento mínimo de la lista, ya que el árbol de recursión puede tener un factor de ramificación $n$ y una profundidad máxima de $T/M$. Espacio $O(T/M)$ auxiliar para la pila de recursión y la combinación temporal, más el espacio requerido por la lista de salida para almacenar todas las combinaciones válidas.
+
+![Accepted — Combination Sum](evidencias/combination-sum-accepted.png)
